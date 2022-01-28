@@ -1,0 +1,1172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol li {
+    margin: 0;
+    padding: 0;
+}
+
+.main_overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.main_overlay:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+/* =========================================
+        common css end
+=============================================*/
+/* =========================================
+          menu part start
+=============================================*/
+.main_menu {
+    height: 50px;
+    background: rgba(53, 53, 53, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.main_menu ul li a {
+    color: #f1f1f1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 10px;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.main_menu ul li a:hover {
+    background: #ffffff;
+    color: #000000;
+
+}
+
+.main_menu ul li a:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: red;
+    transition: all linear .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.main_menu ul li a:hover:after {
+    width: 100%;
+}
+
+.main_menu .navbar-brand {
+    width: 200px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    background: #323232;
+    transform: skewx(-20deg);
+    -webkit-transform: skewx(-20deg);
+    -moz-transform: skewx(-20deg);
+    -ms-transform: skewx(-20deg);
+    -o-transform: skewx(-20deg);
+    position: relative;
+}
+
+.main_menu .navbar-brand img {
+    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+}
+
+.main_menu .navbar-brand::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.829);
+}
+
+.main_menu .navbar-brand::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.829);
+}
+
+/* =========================================
+        menu part end
+=============================================*/
+/* =========================================
+        banner css start
+=============================================*/
+
+.banner_item {
+    padding: 250px 0 175px;
+}
+
+.banner_item:after {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.bannner_text h2 {
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.bannner_text h1 {
+    color: #e23e38;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.bannner_text p {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+.bannner_text a {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 20px;
+    border: 1px solid #ffff;
+    color: #ffffff;
+    margin-top: 30px;
+    transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+}
+
+.bannner_text a:hover {
+    background: red;
+    color: #fff;
+}
+
+.bannner_text h2 {
+    position: relative;
+}
+
+.bannner_text h2::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -63px;
+    width: 270px;
+    height: 4px;
+    background: red;
+    transform: translatey(50%);
+    -webkit-transform: translatey(50%);
+    -moz-transform: translatey(50%);
+    -ms-transform: translatey(50%);
+    -o-transform: translatey(50%);
+    clip-path: polygon(0 3%, 100% 0%, 97% 100%, 0 100%);
+}
+
+.bannner_text h2::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: -106px;
+    width: 270px;
+    height: 4px;
+    background: red;
+    transform: translatey(50%);
+    -webkit-transform: translatey(50%);
+    -moz-transform: translatey(50%);
+    -ms-transform: translatey(50%);
+    -o-transform: translatey(50%);
+    clip-path: polygon(0 3%, 100% 0%, 100% 100%, 3% 100%);
+}
+
+.bannner_text h1 {
+    position: relative;
+}
+
+.bannner_text h1::after {
+    position: absolute;
+    content: '';
+    top: -12px;
+    right: -106px;
+    width: 4px;
+    height: 187px;
+    background: red;
+}
+
+.bannner_text h1::before {
+    position: absolute;
+    content: '';
+    top: -12px;
+    left: -63px;
+    width: 4px;
+    height: 187px;
+    background: red;
+}
+
+.bannner_text a {
+    position: relative;
+}
+
+.bannner_text a::after {
+    position: absolute;
+    content: '';
+    bottom: 6px;
+    right: 343px;
+    width: 25px;
+    height: 4px;
+    background: red;
+    clip-path: polygon(0 3%, 100% 0%, 97% 100%, 0 100%);
+}
+
+.bannner_text a::before {
+    position: absolute;
+    content: '';
+    bottom: 6px;
+    left: 376px;
+    width: 46px;
+    height: 4px;
+    background: red;
+    clip-path: polygon(0 3%, 100% 0%, 100% 100%, 3% 100%);
+}
+
+.banner .slick-dots li button {
+    border: 1px solid white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: transparent;
+    font-size: 0;
+    margin-right: 15px;
+}
+
+.banner .slick-dots {
+    display: flex;
+    bottom:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    bottom: 30px;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.banner .slick-dots li.slick-active button {
+    background: #fa0303;
+    width: 20px;
+    height: 20px;
+
+}
+
+/* =========================================
+       banner css end
+=============================================*
+/* =========================================
+        about css start
+=============================================*/
+
+#about_part {
+    padding: 60px 0px;
+}
+
+.about_vedio {
+    position: relative;
+}
+
+.about_vedio .overlay {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.about_vedio .overlay a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: large;
+    background: rgb(218, 21, 21);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.about_vedio .overlay a i {
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(23%, 19%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.about_dummytext h2 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.about_dummytext p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    margin-top: 20px;
+}
+
+.about_dummytext span {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* =========================================
+        about css end
+=============================================*/
+/* =========================================
+      gallery css start
+=============================================*/
+.col_banner:after {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.col_banner {
+    padding: 30px 0;
+}
+
+.img_adding {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+
+.img_adding .overlay_img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 20px !important;
+    border: 1px solid #fff;
+    background: rgba(255, 0, 0, 0.582);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+
+}
+
+.img_adding .overlay_img a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 30px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.img_adding:hover .overlay_img {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.img_adding :hover img {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.img_adding img {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.img_adding img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+/* =========================================
+       gallery css end
+=============================================*/
+/* =========================================
+       team css start
+=============================================*/
+#team_part {
+    padding: 0px 0;
+
+}
+
+.teamimg {
+    position: relative;
+    overflow: hidden;
+    padding-top: 7px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.teamimg .team_overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #fff;
+    background: rgba(255, 0, 0, 0.582);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    width: 94% !important;
+    height: 64%;
+}
+
+.teamimg:hover .team_overlay,
+.teamimg:hover .team_text p {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.teamimg .team_overlay ul li i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #37237e;
+    background: #ffffff;
+    font-size: 20px;
+    margin-bottom: 7px;
+    cursor: pointer;
+
+
+}
+
+.teamimg .team_overlay ul li {
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(37%, 146%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.teamimg img {
+    transform: scale(1);
+    overflow: inherit;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.teamimg:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.team_text {
+    padding: 10px 0;
+}
+
+.teamimg p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    text-align: justify;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 20px;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.team_text h3 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding-top: 13px;
+}
+
+.team_text h2 {
+    color: #000;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding-top: 8px;
+}
+
+.teamimg:hover .team_text {
+    border: 1px solid #ddd;
+}
+
+.teamimg:hover {
+    transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+}
+
+/* =========================================
+        team css end
+=============================================*/
+/* =========================================
+        testomonial css start
+=============================================*/
+#testomonial_part {
+    padding: 0px 0;
+}
+
+.row {
+    padding: 30px 20px;
+}
+
+.testto_slider::after {
+    background: rgba(0, 0, 0, 0.8);
+
+}
+
+.testomonialtext h5 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+
+}
+
+.testomonialtext h6 {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+
+}
+
+.testp p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.testomonial_slider .slick-dots li button {
+    font-size: 0px;
+    border: 1px solid white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: transparent;
+    margin: 0 5px;
+}
+
+.testomonial_slider .slick-dots {
+    display: flex;
+    left: 50%;
+    position: absolute;
+    bottom: 10px;
+
+}
+
+.testomonial_slider .slick-dots li.slick-active button {
+    background: #fa0303;
+    width: 20px;
+    height: 20px;
+
+}
+/* =========================================
+        testomonial css end
+=============================================*/
+/* =========================================
+        membership  css srtart
+=============================================*/
+#membership_part {
+    padding: 20px 0;
+}
+
+.member_inner .member_background {
+    background: url(../images/membershop1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.member_inner h2 {
+    color: #fff;
+    line-height: 100px;
+    font-size: 29px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.member_inner h3 {
+    background: #dddd;
+    color: #000;
+    line-height: 43px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+
+}
+
+.membera a {
+    background: #dddd;
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+
+}
+
+.member_inner ul li a {
+    margin-top: 25px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #000;
+    background: none;
+}
+
+.membera a {
+    display: block;
+    margin-top: 10px;
+
+}
+
+.member_hover:hover .member_inner h3,
+.member_hover:hover .membera a {
+    background: red;
+
+}
+
+.member_hover {
+    padding-top: 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.member_hover:hover {
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.member_background:after {
+    background: rgba(0, 0, 0, 0.692);
+    height: 100px;
+}
+/* =========================================
+        membership css end
+=============================================*/
+/* =========================================
+        counter css start
+=============================================*/
+#counter_part {
+    padding: 30px 0;
+}
+
+#counter_part::after {
+    background: rgba(0, 0, 0, 0.746);
+}
+
+.counter_text h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.counter_text p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+/* =========================================
+         counter css end
+=============================================*/
+/* =========================================
+        class part css start
+=============================================*/
+#class_part {
+    padding: 80px 0;
+}
+
+.tab_menu {
+    background: #dddd;
+ 
+}
+
+.tab_menu li {
+    width: 16.66666%;
+    height: 50px;
+}
+
+.tab_menu .nav-link.active,
+.tab_menu .show>.nav-link {
+    color: #000;
+    background-color: red;
+    width: 100%;
+   
+}
+.tab_menu li button{
+    text-align: center;
+    width: 100%;
+    padding:0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    line-height: 50px;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.tab_menu li button:hover{
+    color: #000000;
+}
+
+.tab_body ul{
+    display: flex;
+    flex-wrap: wrap;
+    transition:  all linear .3s;
+    -webkit-transition:  all linear .3s;
+    -moz-transition:  all linear .3s;
+    -ms-transition:  all linear .3s;
+    -o-transition:  all linear .3s;
+}
+
+.tab_body li{
+    width: 19.666666%;
+    background: #f1f1f1;
+    margin-right: 5px;
+    padding: 50px 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.tab_body li:hover{
+    background: red;
+}
+
+.tab_body li:nth-child(1),
+.tab_body li:nth-child(2),
+.tab_body li:nth-child(3),
+.tab_body li:nth-child(4),
+.tab_body li:nth-child(5){
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.tab_body li:nth-child(5),
+.tab_body li:nth-child(10){
+    margin-right: 0;
+}
+.tab_body ul li i{
+    font-size: 50px;
+}
+/* =========================================
+         class css end
+=============================================*/
+/* =========================================
+        3dsilder  css start
+=============================================*/
+.previous_arrow,
+.next_arrow{
+    font-size: 28px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-190%);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #5a0d0d;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(-190%);
+    -moz-transform: translateY(-63%);
+    -ms-transform: translateY(-190%);
+    -o-transform: translateY(-190%);
+}
+.previous_arrow{
+    left: -50px;
+}
+.next_arrow{
+    right: -50px;
+}
+.slider3d:hover .next_arrow,
+.slider3d:hover .previous_arrow{
+    background: #000;
+ 
+}
+#dsiler_part{
+    padding: 11px 0;
+}
+.slider_col{
+    width: 19.4444%;
+    height: 100%;
+    margin-right: 5px;
+}
+.slider3d img{
+    width: 100%;
+    max-width: 100%;
+}
+/* =========================================
+       3dslider css end
+=============================================*/
+/* =========================================
+        footer css start
+=============================================*/
+
+#footer_part{
+    padding: 80px 0;
+  
+}
+
+.logoforfooter{
+    position: relative;
+}
+
+.logoforfooter::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ffff;
+    color: #fff;
+    top: 78px;
+    left: 0;
+}
+.HEAD_ROW{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.head{
+    width: 23%;
+    margin-left: 17px;
+}
+.head p{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+   
+}
+
+.fliker_img{
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.fliker_photo img:nth-child(4),
+.fliker_photo img:nth-child(8),
+.fliker_photo img:nth-child(12){
+    margin-right: 0;
+} 
+
+.flikercol{
+    width: 25%;
+
+}
+.fliker_img img{
+    width: 100%;
+    max-width: 100%;
+}
+.contact_part a{
+    color: red;
+    font-size: 15px;
+}
+.social_icon p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 15px;
+
+}
+.social_icon2 a{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: #000;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.social_icon2 a:hover{
+    background: red;
+    border-color: red;
+    
+    
+}
+.weeklymenu ul li{
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 7px;
+
+}
+.timezone ul li{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 7px;
+}
+
+
+.twiterpart1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.twiterpart1 .twiterpart1icon{
+    width: 10%;
+}
+.twiterpart1 .twiterpart1text{
+    width: 90%;
+}
+.twiterpart1 .twiterpart1icon a i {
+    font-size: 15px;
+    color: #fff;
+}
+.twiterpart1 .twiterpart1text p{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 25px;
+}
+
+.footerEnd{
+    padding: 20px 0;
+    text-align: center !important;
+}
+.footerEnd span{
+    color: red;
+}
+.footerEnd{
+    position: relative;
+}
+.footerEnd::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+/* extra work for responsive  */
+.timedateandtext{
+    display: flex;
+    flex-wrap: wrap;
+}
+.weekdaytime{
+    width: 12.5%;
+}
+
+/* =========================================
+        footer css end
+=============================================*/
+
